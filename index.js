@@ -667,12 +667,8 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
 																	});
 																}
 															}
-															if (event.body) {
-							const emojis = ['😀', '😳', '♥️', '😪', '🥲', '🙀', '😘', '🥺', '🚀', '😝', '🥴', '😐', '😆', '😊', '🤩', '😼', '😽', '🤭', '🐱','😹'];
-							const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-
-							api.setMessageReaction(randomEmoji, event.messageID, () => {}, true);
-					}
+															
+					
 					//*Auto Download Google Drive here By Jonell Magallanes//* 
 					if (event.body !== null) {
 								(async () => {
